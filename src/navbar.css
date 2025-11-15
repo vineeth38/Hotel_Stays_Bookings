@@ -1,0 +1,496 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+.menu > nav {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.menu > nav a{
+    text-decoration: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+    display: inline;
+    width: fit-content;
+    margin-top: 5px;
+}
+#searchContainer{
+    width: 70%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.Offer-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: .625rem;
+    box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, .16);
+    margin: 2rem 0 1.25rem;
+    padding: 1.25rem 2rem 3rem 3rem;
+    width: 80%;
+}
+.test{
+    width: 70%;
+    padding: 20px;
+}
+.offers{
+    display: flex;
+    /* width: 75%; */
+}
+.offer1{
+    display: flex;
+    gap: 10px;
+    width: 33%;
+}
+.offer1 img{
+    border-radius: 10px;
+}
+.coupon{
+    background-color: #ec2c2c;
+    color: #fff;
+    border-radius: 1.25rem 0;
+    padding: .25rem 1.25rem;
+}
+.cities-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+    border-radius: .625rem;
+    box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, .16);
+    margin: 2rem 0 1.25rem;
+    padding: 1.25rem 2rem 3rem 3rem;
+}
+.city {
+   position:relative;
+   width: 30%;
+}
+.city > img{
+    width: 100%;
+    height: 275px;
+    filter: brightness(80%);
+    border-radius: 8px;
+}
+.discription {
+    position: absolute;
+     bottom: 5px;
+     color: #fff;
+  left: 20px;
+}
+#login-form,#SignUp-form,#otp-form{
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: .625rem;
+    box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, .16);
+    margin: 2rem 0 1.25rem;
+    padding: 1.25rem 2rem 3rem 3rem;
+    width:25% ;
+}
+#login-form input,#SignUp-form input,#otp-form input{
+    width: 90%;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+    padding: 3px;
+    outline: lightpink;
+}
+.Login-container,.SignUp-container,.otp-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: 80vh; 
+    justify-content: center;
+}
+#lgn-btn{
+    padding: 4px 7px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(92deg, #53b2fe, #065af3);
+    border-radius: 6px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.mt-3{
+     background: linear-gradient(92deg, #53b2fe, #065af3);
+}
+#hotel_heading{
+   padding-left: 10%;
+}
+.hotels-container{
+    display: flex;
+    justify-content: center;
+}
+.destination-container {
+  display: flex;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.filters {
+  flex: 1;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+  gap: 4px;
+}
+
+.hotel-list{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 8px;
+}
+.hotel-card{
+    display: flex;
+    gap: 15px;
+    padding: 8px;
+     box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, .16);
+      transition: transform .2s ;
+      border-radius: 8px;
+      cursor: pointer;
+}
+.hotel-card img{
+    height: 30vh;
+    width: 300px;
+    border-radius: 0px 0px 8px 8px;
+}
+.hotel-card{
+    transform: scale(1.05);
+}
+.htl-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto; 
+}
+.left-section{
+    width: 70%;
+}
+.left-section h4{
+    color: #000;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+}
+.right-section{
+    width: 30%;
+    padding: 50px 20px;
+}
+.htl-images{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+}
+@media (min-width:359px) and (max-width:768px){
+    .htl-container{
+        width: 100%;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .htl-images{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+}
+.htl-images img{
+    width: 100%;
+    height: 42vh;
+    border-radius: 0 0 7px 7px;
+}
+#bkNwbtn{
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 8px 20px !important;
+    color: #fff;
+    background: linear-gradient(92deg, #53b2fe, #065af3);
+    box-shadow: 0 1px 7px 0 #0003;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#bkNwbtn:hover{
+   background: dodgerblue;
+}
+.right-top{
+    padding: 15px;
+    box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, .16);
+    border-radius: 16px;
+}
+.right-bottom{
+    padding: 15px;
+    box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, .16);
+    border-radius: 16px;
+    margin-top: 15px;
+}
+#rating{
+    padding: 7px 12px;
+    background-color: #2757ae;
+    color: #fff;
+    border-radius: 16px;
+    font-size: 22px;
+    font-weight: 700;
+    /* height: 56px; */
+    /* width: fit-content; */
+}
+#review{
+    color: #2757ae;
+    font-weight: 600;
+    font-size: 20px;
+}
+.ratings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+hr{
+    background-color: lightgrey;
+    margin: 0px !important;
+}
+.location{
+    padding: 16px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.amenties,.about-P{
+    margin: 2% 0 0 12%;
+}
+.amenties div{
+    display: flex;
+}
+.hotel-card2{
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    box-shadow: 0 0 1.125rem 0 rgba(0, 0, 0, .16);
+    border-radius: 15px;
+    width: 50%;
+}
+.hotel-card2 img{
+   width: 40%;
+   height: 25vh;
+}
+.room{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: fit-content;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    margin: 15px;
+}
+.review-container{
+    margin-left:16% ;
+    padding: 15px;
+}
+.child{
+    padding: 20px;
+    margin: 20px;
+}
+.price_details{
+    padding: 20px;
+}
+.price_details > div{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.price_details h3{
+     padding: 8px 20px !important;
+    color: #fff;
+    background: linear-gradient(92deg, #53b2fe, #065af3);
+    /* background: #FF6D38; */
+    box-shadow: 0 1px 7px 0 #0003;
+    border-radius: 7px;
+    cursor: pointer;
+    width: fit-content;
+}
+.price_details h3:hover{
+    background: #FF6D38;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card > div{
+    padding: 15px;
+}
+.card > div h4{
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(92deg, #53b2fe, #065af3);
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.Cheading{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.card-inputs{
+    display: flex;
+    gap: 7px;
+    margin: 8px 0;
+}
+input,select{
+    border-radius: 10px;
+}
+#cardNum{
+    width: 100%;
+}
+#cardNum,select,#cvv {
+    padding: 8px;
+    border:2px solid lightgray;
+}
+.cardsContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 1px 7px 0 #0003;
+    border-radius: 16px;
+}
+.card-types{
+    display: flex;
+    gap: 8px;
+}
+.card-types > img{
+    width: 70px;
+}
+.paymentVerify-container{
+    display: flex;
+    justify-content: center;
+}
+.paymentVerify-container > div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.bank-logos img{
+    width: 100px;
+}
+#verfication{
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid lightgray;
+    padding: 5px;
+}
+.paymentVerify-container h5{
+    background: #ed222a;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.bank-logos{
+    display: flex;
+    justify-content: space-between;
+}
+#cnfrm-btn{
+    text-align: center;
+    cursor: pointer;
+}
+.optional-btns{
+    display: flex;
+    gap: 5px;
+}
+.optional-btns h5{
+    width: 49%;
+    text-align: center;
+}
+#wibmo{
+    width: 100px;
+    align-self: center;
+}
+.recommended{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.rhotel-card{
+    width: 25%;
+    cursor: pointer;
+}
+.rhotel-card > div img{
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+}
+.menu  button{
+   background: #FF6D38; 
+   color: #fff;
+   padding: 4px 8px;
+   border-radius: 8px;
+   border: none;
+}
+#user{
+    color:dodgerblue
+}
+.bookings-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.bookings-container > div{
+    display: flex;
+    gap: 5px;
+    /* justify-content: center; */
+    width: 70%;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 1px 7px 0 #0003;;
+}
+.himage{
+    width: 30%;
+}
+.himage img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 0 0 7px 7px;
+}
+.InOut{
+  display: flex;
+  gap: 15px;
+}
+.city{
+    cursor: pointer;
+}
