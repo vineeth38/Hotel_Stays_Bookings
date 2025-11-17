@@ -68,7 +68,7 @@ export const Search = ()=>{
             <Form.Label className="fw-bold text-secondary small">Where to</Form.Label>
             <Form.Control
               type="text"
-              placeholder="e.g. - Area, Landmark or Property Name"
+              placeholder="City"
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
             required/>
@@ -108,7 +108,7 @@ export const Search = ()=>{
           </Col>
         </Row>
 
-           <Button type="submit" className="mt-3 rounded-3" onClick={handleData}>Search</Button>
+           <Button type="submit" className="mt-3 rounded-3" onClick={handleData} id="searchBtn">Search</Button>
       </Form>
     </div>
     

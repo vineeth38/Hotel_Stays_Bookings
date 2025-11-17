@@ -20,7 +20,7 @@ export const Otp = ()=>{
        console.log(verification_data)
        try{
               const response = await axios.post(
-                    "https://hotel-stays-booking.onrender.com/verifyOtp/",
+                    "http://127.0.0.1:8000/verifyOtp/",
                     verification_data,
                  {
                   withCredentials: true

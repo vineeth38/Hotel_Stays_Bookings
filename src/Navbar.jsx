@@ -33,7 +33,7 @@ export const NavSec = ()=>{
             // localStorage.removeItem("token")
             // setUserName("");
             // alert("You have been logged out");
-            await fetch("https://hotel-stays-booking.onrender.com/logout/", {
+            await fetch("http://127.0.0.1:8000/logout/", {
                   method: "POST",
                   credentials: "include" // Important to send cookies
                     }).then(res => res.json()).then(data => {
@@ -60,7 +60,7 @@ export const NavSec = ()=>{
         <div className="menu">
             <nav>
                 <Link to="/" onClick={handleHome}>Home</Link>
-                <Link to="/Favorites">Favorites</Link>
+                {/* <Link to="/Favorites">Favorites</Link> */}
                 <Link to="/Bookings">Bookings</Link>
                 {/* <Link to="/Login">Login</Link> */}
                 

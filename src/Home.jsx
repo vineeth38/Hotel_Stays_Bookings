@@ -51,7 +51,7 @@ export const Home = ()=>{
   }
     return <>
     {/* <h3>Best Recommended hotels to stay</h3> */}
-    <h3 style={{marginLeft:"12%",fontFamily:"Times New Roman"}}><i>Most Recommended Popular Choices</i> </h3>
+    <h3 style={{marginLeft:"12%",fontFamily:"Times New Roman"}} id="h3"><i>Most Recommended Popular Choices</i> </h3>
     <div className="recommended">{
       rhotels?.recommended.map((hotel)=>(
           <div className="rhotel-card" onClick={()=>handleCardClick(hotel)}>
@@ -98,7 +98,8 @@ export const Home = ()=>{
           </div>
       </div>  */}
       {/* </div> */}
-      <center>
+      {/* <center> */}
+      <div className="Mcities">
       <div className="cities-container">
         <div className="test">
         <h3>Popular Destinations</h3>
@@ -113,6 +114,8 @@ export const Home = ()=>{
       </div>
     </div>
   ))}
-</div></center>
+</div>
+</div>
+{/* </center> */}
     </>
 }

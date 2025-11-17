@@ -52,7 +52,6 @@ form{
     width: 80%;
 }
 .test{
-    width: 70%;
     padding: 20px;
 }
 .offers{
@@ -493,4 +492,110 @@ input,select{
 }
 .city{
     cursor: pointer;
+}
+.Mcities{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:359px) and (max-width:630px){
+    .navbar{
+        width: 95%;
+    }
+    .navbar img{
+        width: 80px;
+    }
+    .menu a,#user{
+        font-size:12px;
+        font-weight: 600;
+    }
+    .menu button{
+        font-size:12px;
+        padding: 3px 6px;
+    }
+    center h3{
+        padding-top: 5px;
+        font-size:larger;
+    }
+    #searchContainer{
+        padding: 1px !important;
+    }
+    label{
+        font-size: small !important;
+    }
+    input{
+        padding:8px !important;
+        width: 100% !important;
+    }
+    .col-md-2{
+        display: flex;
+        flex-direction: column !important;
+    }
+    #searchBtn{
+        padding: 3px 6px;
+    }
+    .h3{
+        font-size: large !important;
+        padding-top: 3px;
+    }
+    .recommended{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3px;
+    }
+    .rhotel-card{
+        width: 70%;
+    }
+    .rhotel-card h4{
+        font-size: large;
+    }
+    p{
+        font-size: medium;
+    }
+    .test h3,.discription h3{
+        font-size: large;
+    }
+    .cities-container{
+        display: grid;
+        grid-template-columns: repeat(auto, minmax(250px, 300px));
+    }
+    .city{
+        width: 100%;
+    }
+    .htl-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 3px;
+        align-items: center;
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* width: 100%; */
+    }
+    .right-section {
+    width: 80%;
+    padding: 50px 20px;
+}
+.amenties, .about-P{
+    padding: 3px ;
+}
+#login-form, #SignUp-form, #otp-form {
+    width: 70%;
+}
+.bookings-container > div{
+    width: 100%;
+}
+h4,h5{
+    font-size: small !important;
+}
+}
+@media (min-width: 630px) and (max-width:1000px){
+   .city{
+    width: 48%;
+   }
+   #login-form, #SignUp-form, #otp-form {
+    width: 50%;
+}
 }

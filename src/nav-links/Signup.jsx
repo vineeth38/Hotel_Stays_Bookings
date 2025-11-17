@@ -29,15 +29,23 @@ export const Signup = ()=>{
 
                try{
                 const response = await axios.post(
-                    "https://hotel-stays-booking.onrender.com/Signup/",
+                    "http://127.0.0.1:8000/Signup/",
                     formData,
                      { headers: { "Content-Type": "application/json" }}
                 );
-                setMessage(response.data.message || JSON.stringify(response.data))
+                // setMessage(response.data.message || JSON.stringify(response.data))
+                const response_data=response.data
                 console.log(response.data)
                 console.log(email)
-
-                navigate('/Otp', { state: { email } })
+                 localStorage.setItem("access", response.data.access);
+                 localStorage.setItem("refresh",response.data.refresh)
+                localStorage.setItem("user", JSON.stringify(response.data.user));
+                setUser(JSON.parse(localStorage.getItem("user")));
+                setUserName(user.name)
+                alert("Successfully registered")
+                // navigate('/', { state: { response_data } })
+                navigate('/')
+                // navigate('/Otp', { state: { email } })
                }catch (error) {
               console.error(" Full Axios error:", error);
               if (error.response) {
