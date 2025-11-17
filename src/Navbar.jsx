@@ -33,7 +33,7 @@ export const NavSec = ()=>{
             // localStorage.removeItem("token")
             // setUserName("");
             // alert("You have been logged out");
-            await fetch("http://127.0.0.1:8000/logout/", {
+            await fetch("https://hotel-stays-booking.onrender.com/logout/", {
                   method: "POST",
                   credentials: "include" // Important to send cookies
                     }).then(res => res.json()).then(data => {
