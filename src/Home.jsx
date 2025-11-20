@@ -104,7 +104,7 @@ export const Home = ()=>{
         <div className="test">
         <h3>Popular Destinations</h3>
         <p>We have selected best hotels in these locations around the world for you</p>
-            <hr>
+            <hr />
       </div>
   {Destinations.map((city) => (
     <div className="city" key={city.id} data-aos="zoom-in-up" onClick={()=>handleCityCard(city)}>
